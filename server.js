@@ -28,13 +28,13 @@ var server = http.createServer(function (request, response) {
     response.write(`
           <!DOCTYPE html>
           <head>
-            <link rel="stylesheet" href="/x">
+            <link rel="stylesheet" href="/style">
           </head>
           <h1>Node.js Server</h1>
        
     `);
     response.end();
-  } else if (path === "/x") {
+  } else if (path === "/style") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/css;charset=utf-8");
     response.write(`body{color: red;}`);
